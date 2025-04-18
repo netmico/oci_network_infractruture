@@ -92,7 +92,7 @@ resource "oci_core_instance" "instance" {
   shape               = "VM.Standard2.1"
   source_details {
     source_type = "image"
-    source_id   = "ocid1.image.oc1.iad.aaaaaaaablkb5j2kdyqehb7qp2scdyuwslknidn4a53qzje2fxcbw3ji5gta" # Replace with a valid image OCID
+    source_id   = "ocid1.image.oc1.iad.aaaaaaaablkb5j2kdyqehb7qp2scdyuwslknidn4a53qzje2fxcbw3ji5gta"
   }
   create_vnic_details {
     subnet_id = oci_core_subnet.public.id
