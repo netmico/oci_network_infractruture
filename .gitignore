@@ -1,0 +1,12 @@
+# Ignore Terraform variable overrides (usually contains secrets)
+*.tfvars
+*.tfvars.json
+
+# Ignore backup and override files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Optional: local plan files
+*.plan
