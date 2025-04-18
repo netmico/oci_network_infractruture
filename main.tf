@@ -26,7 +26,7 @@ resource "oci_core_subnet" "public" {
 
 resource "oci_core_subnet" "private" {
   cidr_block          = "10.92.2.0/24"
-  display_name        = "PeivateSubnet"
+  display_name        = "PrivateSubnet"
   vcn_id              = oci_core_vcn.OCI_NET.id
   compartment_id      = var.compartment_id
   availability_domain = data.oci_identity_availability_domains.ADs.availability_domains[0].name
